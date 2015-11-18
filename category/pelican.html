@@ -3,8 +3,7 @@
 
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Search - GIT TO GEEK
-</title>
+    <title>Pelican - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,7 +12,8 @@
 
 
 
-        <meta name="author" content="CHANN" />
+    <meta name="author" content="CHANN" />
+    <meta name="keywords" content="Pelican" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="GIT TO GEEK" />
@@ -57,7 +57,7 @@ GIT TO GEEK            </a>
                         <li >
                             <a href="/category/home.html">Home</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/pelican.html">Pelican</a>
                         </li>
             </ul>
@@ -73,7 +73,33 @@ GIT TO GEEK            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-<div id="tipue_search_content"></div>
+            <article>
+                <h2><a href="/pelicaneseo-geul-sseuneun-beob.html">Pelican에서 글 쓰는 법</a></h2>
+                <div class="summary"><p>Pelican에서 글을 쓰는 건 간단하다.</p>
+<h2>작성법</h2>
+<div class="highlight"><pre>├── LICENSE
+├── Makefile
+├── __pycache__
+│   └── pelicanconf.cpython-34.pyc
+│
+├── content  <span class="c"># 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자</span>
+│   ├── about.md
+│   ├── hello.md
+│   └── how-to-write.md
+│
+├── develop_server.sh
+├── fabfile.py
+├── pelicanconf.py
+├── pelicanconf.pyc
+├── publishconf.py
+└── publishconf.pyc
+│
+└── output  <span class="c"># 이 폴더가 바로 github page에 동기화되어야 할 폴더 ...</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="/pelicaneseo-geul-sseuneun-beob.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -128,17 +154,5 @@ GIT TO GEEK            </a>
 <script src="/theme/js/respond.min.js"></script>
 
 
-    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch.min.js"></script>
-    <script>
-    $(document).ready(function() {
-      $('#tipue_search_input').tipuesearch({
-        'mode' : 'json',
-        'show': 10,
-        'newWindow': false,
-        'contentLocation': 'tipuesearch_content.json'
-      });
-    });
-    </script>
 </body>
 </html>

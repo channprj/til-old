@@ -3,7 +3,7 @@
 
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Articles by CHANN - GIT TO GEEK</title>
+    <title>Pelican에서 글 쓰는 법 - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,15 +11,19 @@
 
 
 
+<link rel="canonical" href="/pelicaneseo-geul-sseuneun-beob.html">
 
         <meta name="author" content="CHANN" />
+        <meta name="description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py └── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="GIT TO GEEK" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="GIT TO GEEK"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="GIT TO GEEK"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Pelican에서 글 쓰는 법"/>
+        <meta property="og:url" content="/pelicaneseo-geul-sseuneun-beob.html"/>
+        <meta property="og:description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py └── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..."/>
+        <meta property="article:published_time" content="2015-11-18" />
+            <meta property="article:section" content="Pelican" />
+            <meta property="article:author" content="CHANN" />
 
 
     <!-- Bootstrap -->
@@ -56,7 +60,7 @@ GIT TO GEEK            </a>
                         <li >
                             <a href="/category/home.html">Home</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/pelican.html">Pelican</a>
                         </li>
             </ul>
@@ -72,9 +76,34 @@ GIT TO GEEK            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/pelicaneseo-geul-sseuneun-beob.html">Pelican에서 글 쓰는 법</a></h2>
-                <div class="summary"><p>Pelican에서 글을 쓰는 건 간단하다.</p>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/pelicaneseo-geul-sseuneun-beob.html"
+                       rel="bookmark"
+                       title="Permalink to Pelican에서 글 쓰는 법">
+                        Pelican에서 글 쓰는 법
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-11-18T17:27:00+09:00"> 수 18 11월 2015</time>
+    </span>
+
+
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Pelican에서 글을 쓰는 건 간단하다.</p>
 <h2>작성법</h2>
 <div class="highlight"><pre>├── LICENSE
 ├── Makefile
@@ -93,36 +122,37 @@ GIT TO GEEK            </a>
 ├── publishconf.py
 └── publishconf.pyc
 │
-└── output  <span class="c"># 이 폴더가 바로 github page에 동기화되어야 할 폴더 ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/pelicaneseo-geul-sseuneun-beob.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/about.html">About</a></h2>
-                <div class="summary"><p>이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다.</p>
-<p>아래는 임시로 저장하는 Disqus 코드.</p>
-<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;disqus_thread&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+└── output  <span class="c"># 이 폴더가 바로 github page에 동기화되어야 할 폴더</span>
+</pre></div>
 
-<span class="nt">&lt;script&gt;</span>
-<span class="kd">var</span> <span class="nx">disqus_config</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span> <span class="o">=</span> <span class="nx">PAGE_URL</span><span class="p">;</span> <span class="c1">// Replace PAGE_URL with your page&#39;s canonical URL variable</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="nx">PAGE_IDENTIFIER</span><span class="p">;</span> <span class="c1">// Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable</span>
-<span class="p">};</span>
-<span class="o">*</span><span class="err">/</span>
-<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// DON ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/about.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/my-first-post.html">My First Post</a></h2>
-                <div class="summary"><p>My first pelican post!</p>
-<p>한글 잘 나오니?</p>
-                    <a class="btn btn-default btn-xs" href="/my-first-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+
+<p>Pelican을 사용할 때 명시해야 할 형식은 아래와 같다.</p>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span>  <span class="err">제목을</span> <span class="err">적으면</span> <span class="err">된다</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span> <span class="mi">17</span><span class="o">:</span><span class="mi">27</span>
+<span class="n">Category</span><span class="o">:</span> <span class="err">카테고리를</span> <span class="err">적으면</span> <span class="err">된다</span>
+
+<span class="err">그리고</span> <span class="err">여기에</span> <span class="err">내용을</span> <span class="err">적으면</span> <span class="err">된다</span><span class="o">.</span>
+</pre></div>
+
+
+<p>내용에서의 마크다운 문법은 Git-Flavored Markdown  의 형식을 준수하면 된다.</p>
+<p>파일 제목을 영어로 작성하자. 한글로 작성시 오류가 날 확률이 있다.</p>
+<hr />
+<h2>Github Pages에 업로드하기</h2>
+<p>단순하니 아래의 명령어를 참고하자.</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican content
+<span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git add .
+<span class="nv">$ </span>git commit -m <span class="s2">&quot;커밋 메시지&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+<p>좀 더 편리한 방법으로 Travis-CI를 연결하여 자동으로 푸시되게 하는 방법이 있는데, 이 부분은 나중에 작성할 예정이다.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
