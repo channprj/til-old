@@ -9,7 +9,7 @@
 
 
 
-<link rel="canonical" href="/how-to-write-on-pelican.html">
+<link rel="canonical" href="/pelican/how-to-write-on-pelican">
 
         <meta name="author" content="CHANN" />
         <meta name="description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py ├── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..." />
@@ -17,7 +17,7 @@
         <meta property="og:site_name" content="GIT TO GEEK" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Pelican에서 글 쓰는 법"/>
-        <meta property="og:url" content="/how-to-write-on-pelican.html"/>
+        <meta property="og:url" content="/pelican/how-to-write-on-pelican"/>
         <meta property="og:description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py ├── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..."/>
         <meta property="article:published_time" content="2015-11-18" />
             <meta property="article:section" content="Pelican" />
@@ -53,13 +53,13 @@ GIT TO GEEK            </a>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="/category/about.html">About</a>
+                            <a href="/about/index">About</a>
                         </li>
                         <li class="active">
-                            <a href="/category/pelican.html">Pelican</a>
+                            <a href="/pelican/index">Pelican</a>
                         </li>
                         <li >
-                            <a href="/category/test.html">Test</a>
+                            <a href="/test/index">Test</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -78,7 +78,7 @@ GIT TO GEEK            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/how-to-write-on-pelican.html"
+                    <a href="/pelican/how-to-write-on-pelican"
                        rel="bookmark"
                        title="Permalink to Pelican에서 글 쓰는 법">
                         Pelican에서 글 쓰는 법
@@ -166,7 +166,7 @@ Travis와 연동하면 의미없는 짓이긴 하지만... 당장 바로 써먹�
             var disqus_shortname = 'githubs'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'how-to-write-on-pelican';
-                var disqus_url = '/how-to-write-on-pelican.html';
+                var disqus_url = '/pelican/how-to-write-on-pelican';
 
             var disqus_config = function () {
                 this.language = "ko";

@@ -9,7 +9,7 @@
 
 
 
-<link rel="canonical" href="/about.html">
+<link rel="canonical" href="/about/about">
 
         <meta name="author" content="CHANN" />
         <meta name="description" content="이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다. 아래는 임시로 저장하는 Disqus 코드. &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt; &lt;script&gt; var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page&#39;s canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable }; */ (function() { // DON ..." />
@@ -17,7 +17,7 @@
         <meta property="og:site_name" content="GIT TO GEEK" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="About"/>
-        <meta property="og:url" content="/about.html"/>
+        <meta property="og:url" content="/about/about"/>
         <meta property="og:description" content="이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다. 아래는 임시로 저장하는 Disqus 코드. &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt; &lt;script&gt; var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page&#39;s canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable }; */ (function() { // DON ..."/>
         <meta property="article:published_time" content="2015-11-15" />
             <meta property="article:section" content="About" />
@@ -53,13 +53,13 @@ GIT TO GEEK            </a>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="/category/about.html">About</a>
+                            <a href="/about/index">About</a>
                         </li>
                         <li >
-                            <a href="/category/pelican.html">Pelican</a>
+                            <a href="/pelican/index">Pelican</a>
                         </li>
                         <li >
-                            <a href="/category/test.html">Test</a>
+                            <a href="/test/index">Test</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -78,7 +78,7 @@ GIT TO GEEK            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/about.html"
+                    <a href="/about/about"
                        rel="bookmark"
                        title="Permalink to About">
                         About
@@ -134,7 +134,7 @@ GIT TO GEEK            </a>
             var disqus_shortname = 'githubs'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'about';
-                var disqus_url = '/about.html';
+                var disqus_url = '/about/about';
 
             var disqus_config = function () {
                 this.language = "ko";

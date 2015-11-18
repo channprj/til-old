@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>TEST - GIT TO GEEK</title>
+    <title>About - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="CHANN" />
-    <meta name="keywords" content="TEST" />
+    <meta name="keywords" content="About" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="GIT TO GEEK" />
@@ -49,14 +49,14 @@ GIT TO GEEK            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/category/about.html">About</a>
-                        </li>
-                        <li >
-                            <a href="/category/pelican.html">Pelican</a>
-                        </li>
                         <li class="active">
-                            <a href="/category/test.html">Test</a>
+                            <a href="/about/index">About</a>
+                        </li>
+                        <li >
+                            <a href="/pelican/index">Pelican</a>
+                        </li>
+                        <li >
+                            <a href="/test/index">Test</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -72,9 +72,19 @@ GIT TO GEEK            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="/test.html">TEST</a></h2>
-                <div class="summary"><p>테스트 요약글입니다.</p>
-                    <a class="btn btn-default btn-xs" href="/test.html">more ...</a>
+                <h2><a href="/about/about">About</a></h2>
+                <div class="summary"><p>이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다.</p>
+<p>아래는 임시로 저장하는 Disqus 코드.</p>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;disqus_thread&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">disqus_config</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span> <span class="o">=</span> <span class="nx">PAGE_URL</span><span class="p">;</span> <span class="c1">// Replace PAGE_URL with your page&#39;s canonical URL variable</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="nx">PAGE_IDENTIFIER</span><span class="p">;</span> <span class="c1">// Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable</span>
+<span class="p">};</span>
+<span class="o">*</span><span class="err">/</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// DON ...</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="/about/about">more ...</a>
                 </div>
             </article>
             <hr/>

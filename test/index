@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pelican - GIT TO GEEK</title>
+    <title>TEST - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="CHANN" />
-    <meta name="keywords" content="Pelican" />
+    <meta name="keywords" content="TEST" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="GIT TO GEEK" />
@@ -50,13 +50,13 @@ GIT TO GEEK            </a>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="/category/about.html">About</a>
-                        </li>
-                        <li class="active">
-                            <a href="/category/pelican.html">Pelican</a>
+                            <a href="/about/index">About</a>
                         </li>
                         <li >
-                            <a href="/category/test.html">Test</a>
+                            <a href="/pelican/index">Pelican</a>
+                        </li>
+                        <li class="active">
+                            <a href="/test/index">Test</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -72,28 +72,9 @@ GIT TO GEEK            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="/how-to-write-on-pelican.html">Pelican에서 글 쓰는 법</a></h2>
-                <div class="summary"><p>Pelican에서 글을 쓰는 건 간단하다.</p>
-<h2>작성법</h2>
-<div class="highlight"><pre>├── LICENSE
-├── Makefile
-├── __pycache__
-│   └── pelicanconf.cpython-34.pyc
-│
-├── content  <span class="c"># 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자</span>
-│   ├── about.md
-│   ├── hello.md
-│   └── how-to-write.md
-│
-├── develop_server.sh
-├── fabfile.py
-├── pelicanconf.py
-├── pelicanconf.pyc
-├── publishconf.py
-├── publishconf.pyc
-│
-└── output  <span class="c"># 이 폴더가 바로 github page에 동기화되어야 할 폴더 ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/how-to-write-on-pelican.html">more ...</a>
+                <h2><a href="/test/test">TEST</a></h2>
+                <div class="summary"><p>테스트 요약글입니다.</p>
+                    <a class="btn btn-default btn-xs" href="/test/test">more ...</a>
                 </div>
             </article>
             <hr/>
