@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pelican에서 글 쓰는 법 - GIT TO GEEK</title>
+    <title>About - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,18 +9,18 @@
 
 
 
-<link rel="canonical" href="/pelican/how-to-write-on-pelican">
+<link rel="canonical" href="/about/about.html">
 
         <meta name="author" content="CHANN" />
-        <meta name="description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py ├── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..." />
+        <meta name="description" content="이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다. 아래는 임시로 저장하는 Disqus 코드. &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt; &lt;script&gt; var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page&#39;s canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable }; */ (function() { // DON ..." />
 
         <meta property="og:site_name" content="GIT TO GEEK" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Pelican에서 글 쓰는 법"/>
-        <meta property="og:url" content="/pelican/how-to-write-on-pelican"/>
-        <meta property="og:description" content="Pelican에서 글을 쓰는 건 간단하다. 작성법 ├── LICENSE ├── Makefile ├── __pycache__ │ └── pelicanconf.cpython-34.pyc │ ├── content # 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자 │ ├── about.md │ ├── hello.md │ └── how-to-write.md │ ├── develop_server.sh ├── fabfile.py ├── pelicanconf.py ├── pelicanconf.pyc ├── publishconf.py ├── publishconf.pyc │ └── output # 이 폴더가 바로 github page에 동기화되어야 할 폴더 ..."/>
-        <meta property="article:published_time" content="2015-11-18" />
-            <meta property="article:section" content="Pelican" />
+        <meta property="og:title" content="About"/>
+        <meta property="og:url" content="/about/about.html"/>
+        <meta property="og:description" content="이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다. 아래는 임시로 저장하는 Disqus 코드. &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt; &lt;script&gt; var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page&#39;s canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable }; */ (function() { // DON ..."/>
+        <meta property="article:published_time" content="2015-11-15" />
+            <meta property="article:section" content="About" />
             <meta property="article:author" content="CHANN" />
 
 
@@ -52,14 +52,14 @@ GIT TO GEEK            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/about/index">About</a>
-                        </li>
                         <li class="active">
-                            <a href="/pelican/index">Pelican</a>
+                            <a href="/about/index.html">About</a>
                         </li>
                         <li >
-                            <a href="/test/index">Test</a>
+                            <a href="/pelican/index.html">Pelican</a>
+                        </li>
+                        <li >
+                            <a href="/test/index.html">Test</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -78,10 +78,10 @@ GIT TO GEEK            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/pelican/how-to-write-on-pelican"
+                    <a href="/about/about.html"
                        rel="bookmark"
-                       title="Permalink to Pelican에서 글 쓰는 법">
-                        Pelican에서 글 쓰는 법
+                       title="Permalink to About">
+                        About
                     </a>
                 </h1>
             </header>
@@ -91,7 +91,7 @@ GIT TO GEEK            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-11-18T17:27:00+09:00"> 수 18 11월 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-11-15T00:00:00+09:00"> 일 15 11월 2015</time>
     </span>
 
 
@@ -101,59 +101,27 @@ GIT TO GEEK            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Pelican에서 글을 쓰는 건 간단하다.</p>
-<h2>작성법</h2>
-<div class="highlight"><pre>├── LICENSE
-├── Makefile
-├── __pycache__
-│   └── pelicanconf.cpython-34.pyc
-│
-├── content  <span class="c"># 이 폴더 안에 다음과 같이 xxx.md(마크다운) 파일을 넣자</span>
-│   ├── about.md
-│   ├── hello.md
-│   └── how-to-write.md
-│
-├── develop_server.sh
-├── fabfile.py
-├── pelicanconf.py
-├── pelicanconf.pyc
-├── publishconf.py
-├── publishconf.pyc
-│
-└── output  <span class="c"># 이 폴더가 바로 github page에 동기화되어야 할 폴더</span>
+                <p>이 블로그는 Github Pages에서 Pelican 3.6을 사용하여 만들었습니다.</p>
+<p>아래는 임시로 저장하는 Disqus 코드.</p>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;disqus_thread&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">disqus_config</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span> <span class="o">=</span> <span class="nx">PAGE_URL</span><span class="p">;</span> <span class="c1">// Replace PAGE_URL with your page&#39;s canonical URL variable</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="nx">PAGE_IDENTIFIER</span><span class="p">;</span> <span class="c1">// Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable</span>
+<span class="p">};</span>
+<span class="o">*</span><span class="err">/</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// DON&#39;T EDIT BELOW THIS LINE</span>
+<span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="nb">document</span><span class="p">,</span> <span class="nx">s</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+
+<span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;//githubs.disqus.com/embed.js&#39;</span><span class="p">;</span>
+
+<span class="nx">s</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;data-timestamp&#39;</span><span class="p">,</span> <span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+<span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">head</span> <span class="o">||</span> <span class="nx">d</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+<span class="p">})();</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;noscript&gt;</span>Please enable JavaScript to view the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://disqus.com/?ref_noscript&quot;</span> <span class="na">rel=</span><span class="s">&quot;nofollow&quot;</span><span class="nt">&gt;</span>comments powered by Disqus.<span class="nt">&lt;/a&gt;&lt;/noscript&gt;</span>
 </pre></div>
-
-
-<p>Pelican을 사용할 때 명시해야 할 형식은 아래와 같다.</p>
-<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span>  <span class="err">제목을</span> <span class="err">적으면</span> <span class="err">된다</span>
-<span class="n">Date</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span> <span class="mi">17</span><span class="o">:</span><span class="mi">27</span>
-<span class="n">Category</span><span class="o">:</span> <span class="err">카테고리를</span> <span class="err">적으면</span> <span class="err">된다</span>
-
-<span class="err">그리고</span> <span class="err">여기에</span> <span class="err">내용을</span> <span class="err">적으면</span> <span class="err">된다</span><span class="o">.</span>
-</pre></div>
-
-
-<p>내용에서의 마크다운 문법은 Git-Flavored Markdown  의 형식을 준수하면 된다.</p>
-<p>파일 제목을 영어로 작성하자. 한글로 작성시 오류가 날 확률이 있다.</p>
-<hr />
-<h2>Github Pages에 업로드하기</h2>
-<p>단순하니 아래의 명령어를 참고하자.</p>
-<div class="highlight"><pre><span class="c"># 펠리칸으로 빌드를 하고</span>
-<span class="nv">$ </span>pelican content
-
-<span class="c"># output 폴더로 가서</span>
-<span class="nv">$ </span><span class="nb">cd </span>output
-
-<span class="c"># 커밋을 하고 푸시한다</span>
-<span class="nv">$ </span>git add .
-<span class="nv">$ </span>git commit -m <span class="s2">&quot;커밋 메시지&quot;</span>
-<span class="nv">$ </span>git push origin master
-</pre></div>
-
-
-<p>좀 더 편리한 방법으로 Travis-CI를 연결하여 자동으로 푸시되게 하는 방법이 있는데, 이 부분은 나중에 작성할 예정이다.</p>
-<p>현재 upload.sh 파일을 작성하여 위의 과정을 쉘 스크립트로 자동화시켜놓았다.
-Travis와 연동하면 의미없는 짓이긴 하지만... 당장 바로 써먹을 땐 무식하게 돌아가도록 짜는 것도.... 생각보다 그리 나쁘진 않다. (...)</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -165,8 +133,8 @@ Travis와 연동하면 의미없는 짓이긴 하지만... 당장 바로 써먹�
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'githubs'; // required: replace example with your forum shortname
 
-                    var disqus_identifier = 'how-to-write-on-pelican';
-                var disqus_url = '/pelican/how-to-write-on-pelican';
+                    var disqus_identifier = 'about';
+                var disqus_url = '/about/about.html';
 
             var disqus_config = function () {
                 this.language = "ko";
