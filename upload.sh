@@ -14,6 +14,6 @@ cd output;
 tar -xf auto.tar;
 rm auto.tar;
 git add .;
-git commit -m "added: new post...";
+git commit -m "New post added from upload.sh";
 git push origin master;
 cd ..;
