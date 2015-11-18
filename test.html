@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Home - GIT TO GEEK</title>
+    <title>TEST - GIT TO GEEK</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,16 +9,22 @@
 
 
 
+<link rel="canonical" href="/test.html">
 
-    <meta name="author" content="CHANN" />
-    <meta name="keywords" content="Home" />
+        <meta name="author" content="CHANN" />
+        <meta name="keywords" content="pelican,publishing" />
+        <meta name="description" content="요약글입니다." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="GIT TO GEEK" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="GIT TO GEEK"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="GIT TO GEEK"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="TEST"/>
+        <meta property="og:url" content="/test.html"/>
+        <meta property="og:description" content="요약글입니다."/>
+        <meta property="article:published_time" content="2015-12-25" />
+            <meta property="article:section" content="테스트" />
+            <meta property="article:tag" content="pelican" />
+            <meta property="article:tag" content="publishing" />
+            <meta property="article:author" content="CHANN" />
 
 
     <!-- Bootstrap -->
@@ -52,11 +58,11 @@ GIT TO GEEK            </a>
                         <li >
                             <a href="/category/about.html">About</a>
                         </li>
-                        <li class="active">
-                            <a href="/category/home.html">Home</a>
-                        </li>
                         <li >
                             <a href="/category/pelican.html">Pelican</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/teseuteu.html">테스트</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -71,14 +77,42 @@ GIT TO GEEK            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/my-first-post.html">My First Post</a></h2>
-                <div class="summary"><p>My first pelican post!</p>
-<p>한글 잘 나오니?</p>
-                    <a class="btn btn-default btn-xs" href="/my-first-post.html">more ...</a>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/test.html"
+                       rel="bookmark"
+                       title="Permalink to TEST">
+                        TEST
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-12-25T22:22:00+09:00"> 금 25 12월 2015</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/pelican.html">pelican</a>
+        /
+	<a href="/tag/publishing.html">publishing</a>
+    
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
+                <p>글입니다.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -88,9 +122,8 @@ GIT TO GEEK            </a>
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
               <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="http://twitter.com/chann_kr"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
-                <li class="list-group-item"><a href="http://fb.com/channprj"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                <li class="list-group-item"><a href="http://instagram.com/channprj"><i class="fa fa-instagram-square fa-lg"></i> Instagram</a></li>
+                <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
+                <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
               </ul>
             </li>
 
@@ -101,8 +134,23 @@ GIT TO GEEK            </a>
     <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
       <ul class="list-group" id="links">
         <li class="list-group-item">
-            <a href="http://chann.kr" target="_blank">
-                CHANN
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
             </a>
         </li>
       </ul>
