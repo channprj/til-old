@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>GIT TO GEEK</title><link href="http://git.chann.kr/" rel="alternate"></link><link href="http://git.chann.kr/feeds/about.atom.xml" rel="self"></link><id>http://git.chann.kr/</id><updated>2015-12-25T00:00:00+09:00</updated><entry><title>About</title><link href="http://git.chann.kr/about/about" rel="alternate"></link><updated>2015-12-25T00:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:git.chann.kr,2015-12-25:about/about</id><summary type="html">&lt;p&gt;안녕하세요. CHANN 입니다.&lt;/p&gt;
-&lt;p&gt;이 블로그는 Pelican 3.6.4와 Github Pages를 사용하였습니다.&lt;/p&gt;
-&lt;p&gt;travis-ci 테스트2.&lt;/p&gt;</summary><category term="about"></category><category term="pelican"></category><category term="github"></category><category term="github pages"></category><category term="introduction"></category><category term="miscellany"></category></entry></feed>
