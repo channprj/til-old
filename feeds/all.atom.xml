@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>GIT TO GEEK</title><link href="http://git.chann.kr/" rel="alternate"></link><link href="http://git.chann.kr/feeds/all.atom.xml" rel="self"></link><id>http://git.chann.kr/</id><updated>2015-12-25T22:22:00+09:00</updated><entry><title>TEST</title><link href="http://git.chann.kr/test/test" rel="alternate"></link><updated>2015-12-25T22:22:00+09:00</updated><author><name>CHANN</name></author><id>tag:git.chann.kr,2015-12-25:test/test</id><summary type="html">&lt;p&gt;테스트 글입니다.&lt;br /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CHANN World</title><link href="http://git.chann.kr/" rel="alternate"></link><link href="http://git.chann.kr/feeds/all.atom.xml" rel="self"></link><id>http://git.chann.kr/</id><updated>2015-12-25T22:22:00+09:00</updated><entry><title>TEST</title><link href="http://git.chann.kr/test/test" rel="alternate"></link><updated>2015-12-25T22:22:00+09:00</updated><author><name>CHANN</name></author><id>tag:git.chann.kr,2015-12-25:test/test</id><summary type="html">&lt;p&gt;테스트 글입니다.&lt;br /&gt;
 쉘 스크립트로 Github Pages에 자동 푸시되도록 했는데 잘 되나 테스트 중입니다.&lt;br /&gt;
 Travis  연동이랑 같이 조만간 스크립트를 좀 더 예쁘게 짜야겠다... &lt;/p&gt;
 &lt;blockquote&gt;
