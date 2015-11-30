@@ -415,4 +415,4 @@ exec uwsgi --http :8000 kusle.ini
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="http://zevross.com/blog/2014/05/16/using-the-python-library-beautifulsoup-to-extract-data-from-a-webpage-applied-to-world-cup-rankings/"&gt;zevross의 블로그 글&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://wikidocs.net/book/1"&gt;점프 투 파이썬&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</summary><category term="ku"></category><category term="db"></category><category term="parsing"></category><category term="python"></category></entry></feed>
+&lt;/ol&gt;</summary><category term="ku"></category><category term="db"></category><category term="parsing"></category><category term="python"></category></entry><entry><title>Not Found</title><link href="http://git.chann.kr/misc/404" rel="alternate"></link><updated>0404-04-04T04:04:00+08:28</updated><author><name>CHANN</name></author><id>tag:git.chann.kr,0404-04-04:misc/404</id><summary type="html">&lt;p&gt;글을 찾을 수 없습니다. &lt;a href="/archives"&gt;아카이브&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</summary></entry></feed>
