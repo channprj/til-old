@@ -9,6 +9,4 @@ HCI, 디자인, UX, IoT 등 관심을 두는 분야가 많지만 이 중 제대�
 &lt;p&gt;게시물은 되도록 링크 공유나 인용을 해주시면 감사하겠습니다.
 전문을 그대로 재배포하지는 말아주세요.&lt;/p&gt;
 &lt;p&gt;이 블로그는 Python Pelican 3.6.4을 사용하여 Github Pages에 올려서 운영하고 있습니다.&lt;/p&gt;
-&lt;p&gt;Travis-ci와 연동하여 &lt;a href="https://github.com/channprj/channprj.github.io-source"&gt;Github 저장소&lt;/a&gt;에 푸시가 되면 &lt;a href="https://github.com/channprj/channprj.github.io"&gt;Github  Pages&lt;/a&gt;에 자동으로 빌드하고 푸시합니다.&lt;/p&gt;
-&lt;h2&gt;이미지 테스트&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="test" src="../images/test.png" /&gt;&lt;/p&gt;</summary><category term="about"></category><category term="pelican"></category><category term="github"></category><category term="github pages"></category><category term="introduction"></category><category term="miscellany"></category></entry></feed>
+&lt;p&gt;Travis-ci와 연동하여 &lt;a href="https://github.com/channprj/channprj.github.io-source"&gt;Github 저장소&lt;/a&gt;에 푸시가 되면 &lt;a href="https://github.com/channprj/channprj.github.io"&gt;Github  Pages&lt;/a&gt;에 자동으로 빌드하고 푸시합니다.&lt;/p&gt;</summary><category term="about"></category><category term="pelican"></category><category term="github"></category><category term="github pages"></category><category term="introduction"></category><category term="miscellany"></category></entry></feed>
