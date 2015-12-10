@@ -7,14 +7,21 @@
 
         <link rel="alternate"  href="http://git.chann.kr/feeds/all.atom.xml" type="application/atom+xml" title="CHANN World Full Atom Feed"/>
 
-        <title>Categories | CHANN World // </title>
+        <title>django 정적 페이지 만드는 법 // CHANN World // </title>
 
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://git.chann.kr/theme/css/pure.css">
+    <link rel="stylesheet" href="http://git.chann.kr/theme/css/pygments.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
 </head>
 
 <body>
@@ -45,16 +52,43 @@
                 </div>
             </div>
         </div>
-    <div class="pure-u-1">
+    <div class="pure-u">
         <div class="content">
-            <h1 class="content-subhead">All Categories</h1>
-            <ul>
-                    <li><a href="http://git.chann.kr/about/index">About</a></li>
-                    <li><a href="http://git.chann.kr/dev/index">Dev</a></li>
-                    <li><a href="http://git.chann.kr/misc/index">misc</a></li>
-                    <li><a href="http://git.chann.kr/pelican/index">Pelican</a></li>
-                    <li><a href="http://git.chann.kr/project/index">Project</a></li>
-            </ul>
+            <section class="post">
+                <header class="post-header">
+                    <h1>django 정적 페이지 만드는 법</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://git.chann.kr/tag/dev.html">dev</a>
+                                <a class="post-category" href="http://git.chann.kr/tag/python.html">python</a>
+                                <a class="post-category" href="http://git.chann.kr/tag/django.html">django</a>
+                                <a class="post-category" href="http://git.chann.kr/tag/server.html">server</a>
+                        </p>
+                </header>
+            </section>
+            <!--Summary: -->
+
+<blockquote>
+<p>작성중입니다.</p>
+</blockquote>
+<p>django에서 정적 페이지를 만들 땐 아래의 문서를 참조하자.</p>
+<p><a href="https://docs.djangoproject.com/en/1.9/ref/contrib/flatpages/">django 1.9 버전 공식 문서</a></p>
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "githubs"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
 <footer class="footer">
     <p>&copy; CHANN &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
