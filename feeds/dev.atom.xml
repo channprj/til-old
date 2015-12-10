@@ -7,11 +7,7 @@
 &lt;p&gt;django에서 정적 페이지를 만들 땐 아래의 문서를 참조하자.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://docs.djangoproject.com/en/1.9/ref/contrib/flatpages/"&gt;django 1.9 버전 공식 문서&lt;/a&gt;&lt;/p&gt;</summary><category term="dev"></category><category term="python"></category><category term="django"></category><category term="server"></category></entry><entry><title>ghost 블로그 설치하기</title><link href="http://git.chann.kr/dev/ghost-blog-install-guide" rel="alternate"></link><updated>2015-12-10T20:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:git.chann.kr,2015-12-10:dev/ghost-blog-install-guide</id><summary type="html">&lt;!--Summary: --&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;==작성중인 문서입니다.==&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Ghost는 정말 블로그를 위한 도구다. 마크다운&lt;sup id="fnref:n"&gt;&lt;a class="footnote-ref" href="#fn:n" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; 기반의 에디터가 기본이며, 별다른 기능이 없다. 그래서 가볍고 빠르다. 마크다운 에디터라서 글 쓰는 속도 또한 빠르고 편리하다. 아직 0.7.x 버전&lt;sup id="fnref:n"&gt;&lt;a class="footnote-ref" href="#fn:n" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;이라 완성되었다고 보긴 힘들지만, 당장 사용하기에 전혀 무리가 없다. Ghost는 워드프레스가 점점 기능이 많아지면서 무겁고 사용하기 어려워진 것에 반해 오로지 블로그만을 위해 태어났고, 제 역할에만 충실하여 매우 마음에 든다.&lt;/p&gt;
+&lt;p&gt;Ghost는 정말 블로그를 위한 도구다. 마크다운&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; 기반의 에디터가 기본이며, 별다른 기능이 없다. 그래서 가볍고 빠르다. 마크다운 에디터라서 글 쓰는 속도 또한 빠르고 편리하다. 아직 0.7.x 버전&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;이라 완성되었다고 보긴 힘들지만, 당장 사용하기에 전혀 무리가 없다. Ghost는 워드프레스가 점점 기능이 많아지면서 무겁고 사용하기 어려워진 것에 반해 오로지 블로그만을 위해 태어났고, 제 역할에만 충실하여 매우 마음에 든다.&lt;/p&gt;
 &lt;p&gt;Ghost 블로그를 사용하는 방법은 워드프레스와 마찬가지로 2가지이다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="http://ghost.org"&gt;Ghost&lt;/a&gt; 호스팅을 이용하는 방법(유료)&lt;/li&gt;
@@ -25,7 +21,7 @@
 &lt;p&gt;직접 만들기 위해서는 당연히 서버가 있어야 한다. 서버를 구입하거나, 월정액으로 빌려 쓰거나, 자신의 PC를 서버화하거나, Github Page를 이용하는 방법이 있다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;AWS, Digital Ocean, Vultr와 같은 가상화 서버를 사용 (시간제 요금, $5 ~)&lt;/li&gt;
-&lt;li&gt;라즈베리파이2, 오드로이드, 인텔 에디슨과 같은 SBC&lt;sup id="fnref:n"&gt;&lt;a class="footnote-ref" href="#fn:n" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; 구매 (구입비 $30)&lt;/li&gt;
+&lt;li&gt;라즈베리파이2, 오드로이드, 인텔 에디슨과 같은 SBC&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt; 구매 (구입비 $30)&lt;/li&gt;
 &lt;li&gt;자신의 PC&lt;/li&gt;
 &lt;li&gt;Github Pages 기능을 우회해서 구현&lt;/li&gt;
 &lt;/ol&gt;
@@ -292,22 +288,24 @@ deb-src http://archive.ubuntu.com/ubuntu trusty-updates universe
 &lt;span class="nv"&gt;LOG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/var/log/ghost/server.log&amp;quot;&lt;/span&gt;
 
 stop&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    sudo su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c&lt;span class="s2"&gt;&amp;quot;NODE_ENV=production forever stop &lt;/span&gt;&lt;span class="nv"&gt;$APP&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c &lt;span class="s2"&gt;&amp;quot;source ~/.zshrc; NODE_ENV=production forever stop &lt;/span&gt;&lt;span class="nv"&gt;$APP&lt;/span&gt;&lt;span class="s2"&gt;;&amp;quot;&lt;/span&gt;
+    &lt;span class="c"&gt;# su - $USER -c &amp;quot;NODE_ENV=production forever stop $APP&amp;quot;&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 
 start&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    sudo su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c&lt;span class="s2"&gt;&amp;quot;NODE_ENV=production forever start --append -l &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; -o &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; -e &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$APP&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c &lt;span class="s2"&gt;&amp;quot;source ~/.zshrc; NODE_ENV=production forever start --append -l &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; -o &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; -e &lt;/span&gt;&lt;span class="nv"&gt;$LOG&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$APP&lt;/span&gt;&lt;span class="s2"&gt;;&amp;quot;&lt;/span&gt;
+    &lt;span class="c"&gt;# su - $USER -c &amp;quot;NODE_ENV=production forever start --append -l $LOG -o $LOG -e $LOG $APP&amp;quot;&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 
 &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; in
     start&lt;span class="o"&gt;)&lt;/span&gt;
-        stop
         start
         &lt;span class="p"&gt;;;&lt;/span&gt;
     stop&lt;span class="o"&gt;)&lt;/span&gt;
         stop
         &lt;span class="p"&gt;;;&lt;/span&gt;
     restart&lt;span class="o"&gt;)&lt;/span&gt;
+        stop
         start
         &lt;span class="p"&gt;;;&lt;/span&gt;
     *&lt;span class="o"&gt;)&lt;/span&gt;
@@ -316,10 +314,13 @@ start&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;마무리는 이렇게...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;update-rc.d ghost defaults
+&lt;span class="nv"&gt;$ &lt;/span&gt;update-rc.d ghost &lt;span class="nb"&gt;enable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;그럼 서버가 부팅하면 블로그가 백그라운드로 실행된다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;작성중입니다.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;hr /&gt;
 &lt;h2&gt;참고&lt;/h2&gt;
 &lt;ol&gt;
@@ -337,8 +338,14 @@ start&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;div class="footnote"&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id="fn:n"&gt;
-&lt;p&gt;Single Board Computer의 약자. 보통 작은 마더보드 하나로 작동하는 작은 컴퓨터를 지칭한다.&amp;#160;&lt;a class="footnote-backref" href="#fnref:n" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;텍스트 문서를 편집하는 문법 중 하나. 쉽게 HTML 등 다른 문서형태로 변환이 가능한 것이 장점.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;보통 버전 숫자가 1.0 이하라면 베타라 보는 것이 좋다.&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;Single Board Computer의 약자. 보통 작은 마더보드 하나로 작동하는 작은 컴퓨터를 지칭한다.&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</summary><category term="dev"></category><category term="nodejs"></category><category term="ghost"></category><category term="blog"></category><category term="server"></category><category term="package"></category></entry></feed>
