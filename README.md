@@ -1,4 +1,3 @@
-:electric_plug: [Source](http://github.com/channprj/git.chann.kr-source)
+:electric_plug: [Source](https://github.com/channprj/til.chann.kr-source)
 
-:memo: [Page](http://git.chann.kr)
-
+:memo: [Web](http://til.chann.kr)
