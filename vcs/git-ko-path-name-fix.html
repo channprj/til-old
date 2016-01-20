@@ -18,10 +18,11 @@
 
 	<link href="http://til.chann.kr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned Atom" />
 
+<meta name="keywords" content="vcs, git, i18n, github, terminal, cli">
 
 	<title>
 		Today I Learned
-&ndash; Tag: dev	</title>
+&ndash; Git 한글 깨짐문제	</title>
 
 </head>
 
@@ -51,76 +52,48 @@
 			<p>
 			<a href="http://til.chann.kr">Index</a> &brvbar; <a href="http://til.chann.kr/archives.html">Archives</a>
 			&brvbar; <a href="http://til.chann.kr/feeds/all.atom.xml">Atom</a>
-&gt; Tag: dev
 			</p>
 		</header>
 
 <article>
   <div class="article_title">
-    <h3><a href="http://til.chann.kr/dev/how-to-use-bower">Bower 사용법</a></h3>
+    <h3><a href="http://til.chann.kr/vcs/git-ko-path-name-fix">Git 한글 깨짐문제</a></h3>
   </div>
   <div class="article_text">
     <!--Summary: -->
 
-<p><a href="http://bower.io">Bower</a> 는 웹을 위한 패키지 관리도구다. 트위터에서 개발하였고, 웹 개발시 자주 쓰이는 라이브러리를 쉽고 간편하게 관리할 수 있다. <code>npm</code>, <code>pip</code>, <code>gem</code> 과는 다르게 '웹 패키지 관리도구'라서 특정 언어의 종속성을 가지고 있지 않다. 개인적으로 느낀 장단점은 아래와 같다.</p>
-<h2>장점</h2>
-<ul>
-<li>패키지 설치 및 버전 관리, 의존성 관리 용이</li>
-<li>HTML, CSS, JS ...</li></ul></!--summary:>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h3><a href="http://til.chann.kr/python/python-variable-operator">파이썬 기초</a></h3>
-  </div>
-  <div class="article_text">
-    <!--Summary: -->
+<p>인코딩 문제. 아래 한 줄이면 된다.</p>
+<div class="highlight"><pre><span class="nv">$ </span>git config core.quotepath <span class="nb">false</span>
+</pre></div>
 
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<h2>특징</h2>
-<ul>
-<li>인터프리터 언어</li>
-<li>가독성이 좋음</li>
-<li>접착성이 좋음(풀 언어(glue language)라고도 부름)</li>
-<li>무료</li>
-<li>방대한 오픈소스</li>
-<li>유니코드 기반</li>
-<li>동적 타이핑</li>
-</ul>
+
 <hr />
-<h2>2.x와 3.x의 차이</h2>
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<ul>
-<li>print 함수 형태 변경</li>
-<li>int 형으로 통일됨</li>
-<li>하지만 나누기 결과는 float</li>
-<li>3.x는 문자열 기본 인코딩이 유니코드</li>
-</ul>
-<hr />
-<h2>설치법</h2>
-<h3>윈도우</h3>
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<hr />
-<h3>맥</h3>
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<p>맥에는 ...</p></!--summary:>
+<h2>참고</h2>
+<ol>
+<li><a href="https://kldp.org/node/132431">KLDP 글</a></li>
+</ol>
   </div>
+  <div class="article_meta">
+    <p>Posted on: Wed 20 January 2016</p>
+    <p>Category: <a href="http://til.chann.kr/vcs/index">VCS</a>
+ &ndash; Tags:
+      <a href="http://til.chann.kr/tag/vcs">vcs</a>,      <a href="http://til.chann.kr/tag/git">git</a>,      <a href="http://til.chann.kr/tag/i18n">i18n</a>,      <a href="http://til.chann.kr/tag/github">github</a>,      <a href="http://til.chann.kr/tag/terminal">terminal</a>,      <a href="http://til.chann.kr/tag/cli">cli</a>    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "vcs/git-ko-path-name-fix";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = 'http://githubs.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
 </article>
 
-<footer>
-<div id="paginator">
-
-</div>
-</footer>
 
 		<div id="ending_message">
 			<p>&copy; CHANN. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
