@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/study.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-01-20T16:32:00+09:00</updated><entry><title>프로그래밍 공부 사이트 정리</title><link href="http://til.chann.kr/study/programming-study-site-list" rel="alternate"></link><updated>2016-01-20T16:32:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-20:study/programming-study-site-list</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;계속 추가할 예정&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;알고리즘 문제 풀기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.codingame.com/"&gt;코딩게임&lt;/a&gt; - 코드를 짜서 게임 플레이하기&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.codewars.com"&gt;코드워즈&lt;/a&gt; - 처음에 간단한 문제를 풀어야 가입 가능&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://projecteuler.net/"&gt;프로젝트 오일러&lt;/a&gt; - 코딩해서 수학 문제 답 구하기&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coderbyte.com/"&gt;코더바이트&lt;/a&gt; - 동영상 강좌 포함&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://59.23.113.171/"&gt;더블릿&lt;/a&gt; - 국내, 오래됨&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://algospot.com/"&gt;알고스팟&lt;/a&gt; - 국내, 유명함&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.acmicpc.net"&gt;백준 온라인 저지&lt;/a&gt; - 개인이 운영&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codeground.org/main.do"&gt;코드그라운드&lt;/a&gt; - 삼성에서 운영&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;온라인 학습&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.codecademy.com"&gt;코드카데미&lt;/a&gt; - 예제와 실습 중심으로 직접 보고 타이핑하며 익힘&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="study"></category><category term="programming"></category><category term="dev"></category><category term="favorite"></category></entry></feed>
