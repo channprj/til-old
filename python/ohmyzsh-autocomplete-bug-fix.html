@@ -18,10 +18,11 @@
 
 	<link href="http://til.chann.kr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned Atom" />
 
+<meta name="keywords" content="zsh, shell, terminal, cli, sh, ohmyzsh, bug, fix">
 
 	<title>
 		Today I Learned
-&ndash; Tag: cli	</title>
+&ndash; zsh에서 vim 명령어 자동완성 오류	</title>
 
 </head>
 
@@ -51,7 +52,6 @@
 			<p>
 			<a href="http://til.chann.kr">Index</a> &brvbar; <a href="http://til.chann.kr/archives.html">Archives</a>
 			&brvbar; <a href="http://til.chann.kr/feeds/all.atom.xml">Atom</a>
-&gt; Tag: cli
 			</p>
 		</header>
 
@@ -62,35 +62,43 @@
   <div class="article_text">
     <!--Summary: -->
 
-<p>갑자기 <code>vim</code> 을 입력하고 tab을 누르니 <code>_arguments:450: _vim_files: function definition file not found</code> 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 <code>.zcompdump*</code> 파일을 지우면 대체로 잔버그가 해결된다는 답변<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 <code>exec zsh</code> 해야 해결되었다. 아무 생각 없이 <code>source .zshrc ...</code></p></!--summary:>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h3><a href="http://til.chann.kr/vcs/git-ko-path-name-fix">Git 한글 깨짐문제</a></h3>
-  </div>
-  <div class="article_text">
-    <!--Summary: -->
-
-<p>인코딩 문제. 아래 한 줄이면 된다.</p>
-<div class="highlight"><pre><span class="nv">$ </span>git config core.quotepath <span class="nb">false</span>
+<p>갑자기 <code>vim</code> 을 입력하고 tab을 누르니 <code>_arguments:450: _vim_files: function definition file not found</code> 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 <code>.zcompdump*</code> 파일을 지우면 대체로 잔버그가 해결된다는 답변<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 <code>exec zsh</code> 해야 해결되었다. 아무 생각 없이 <code>source .zshrc</code> 를 치고 '어... 왜 안 고쳐지지?' 헤맸던 내가 바보같다... dotfile 은 환경설정이거늘 ㅠㅠ</p>
+<h2>정리</h2>
+<div class="highlight"><pre><span class="nv">$ </span>rm ~/.zcompdump*
+<span class="nv">$ </span><span class="nb">exec </span>zsh
 </pre></div>
 
 
+<div class="footnote">
 <hr />
-<h2>참고</h2>
 <ol>
-<li><a href="https://kldp.org/node/132431">KLDP 글</a></li>
+<li id="fn:1">
+<p>oh-my-zsh 버전이 올라갈 때마다 잔버그가 자주 나타나는 모양이다.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
 </ol>
+</div>
   </div>
+  <div class="article_meta">
+    <p>Posted on: Mon 25 January 2016</p>
+    <p>Category: <a href="http://til.chann.kr/python/index">Python</a>
+ &ndash; Tags:
+      <a href="http://til.chann.kr/tag/zsh">zsh</a>,      <a href="http://til.chann.kr/tag/shell">shell</a>,      <a href="http://til.chann.kr/tag/terminal">terminal</a>,      <a href="http://til.chann.kr/tag/cli">cli</a>,      <a href="http://til.chann.kr/tag/sh">sh</a>,      <a href="http://til.chann.kr/tag/ohmyzsh">ohmyzsh</a>,      <a href="http://til.chann.kr/tag/bug">bug</a>,      <a href="http://til.chann.kr/tag/fix">fix</a>    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "python/ohmyzsh-autocomplete-bug-fix";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = 'http://githubs.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
 </article>
 
-<footer>
-<div id="paginator">
-
-</div>
-</footer>
 
 		<div id="ending_message">
 			<p>&copy; CHANN. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>

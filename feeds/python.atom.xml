@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/python.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-01-04T20:12:00+09:00</updated><entry><title>파이썬 기초</title><link href="http://til.chann.kr/python/python-variable-operator" rel="alternate"></link><updated>2016-01-04T20:12:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-04:python/python-variable-operator</id><summary type="html">&lt;!--Summary: --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/python.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-01-25T21:12:00+09:00</updated><entry><title>zsh에서 vim 명령어 자동완성 오류</title><link href="http://til.chann.kr/python/ohmyzsh-autocomplete-bug-fix" rel="alternate"></link><updated>2016-01-25T21:12:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-25:python/ohmyzsh-autocomplete-bug-fix</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;p&gt;갑자기 &lt;code&gt;vim&lt;/code&gt; 을 입력하고 tab을 누르니 &lt;code&gt;_arguments:450: _vim_files: function definition file not found&lt;/code&gt; 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 &lt;code&gt;.zcompdump*&lt;/code&gt; 파일을 지우면 대체로 잔버그가 해결된다는 답변&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 &lt;code&gt;exec zsh&lt;/code&gt; 해야 해결되었다. 아무 생각 없이 &lt;code&gt;source .zshrc&lt;/code&gt; 를 치고 '어... 왜 안 고쳐지지?' 헤맸던 내가 바보같다... dotfile 은 환경설정이거늘 ㅠㅠ&lt;/p&gt;
+&lt;h2&gt;정리&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;rm ~/.zcompdump*
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;exec &lt;/span&gt;zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;oh-my-zsh 버전이 올라갈 때마다 잔버그가 자주 나타나는 모양이다.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</summary><category term="zsh"></category><category term="shell"></category><category term="terminal"></category><category term="cli"></category><category term="sh"></category><category term="ohmyzsh"></category><category term="bug"></category><category term="fix"></category></entry><entry><title>파이썬 기초</title><link href="http://til.chann.kr/python/python-variable-operator" rel="alternate"></link><updated>2016-01-04T20:12:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-04:python/python-variable-operator</id><summary type="html">&lt;!--Summary: --&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;작성중&lt;/p&gt;

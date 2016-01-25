@@ -21,7 +21,7 @@
 
 	<title>
 		Today I Learned
-&ndash; Tag: cli	</title>
+&ndash; Tag: bug	</title>
 
 </head>
 
@@ -51,7 +51,7 @@
 			<p>
 			<a href="http://til.chann.kr">Index</a> &brvbar; <a href="http://til.chann.kr/archives.html">Archives</a>
 			&brvbar; <a href="http://til.chann.kr/feeds/all.atom.xml">Atom</a>
-&gt; Tag: cli
+&gt; Tag: bug
 			</p>
 		</header>
 
@@ -63,26 +63,6 @@
     <!--Summary: -->
 
 <p>갑자기 <code>vim</code> 을 입력하고 tab을 누르니 <code>_arguments:450: _vim_files: function definition file not found</code> 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 <code>.zcompdump*</code> 파일을 지우면 대체로 잔버그가 해결된다는 답변<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 <code>exec zsh</code> 해야 해결되었다. 아무 생각 없이 <code>source .zshrc ...</code></p></!--summary:>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h3><a href="http://til.chann.kr/vcs/git-ko-path-name-fix">Git 한글 깨짐문제</a></h3>
-  </div>
-  <div class="article_text">
-    <!--Summary: -->
-
-<p>인코딩 문제. 아래 한 줄이면 된다.</p>
-<div class="highlight"><pre><span class="nv">$ </span>git config core.quotepath <span class="nb">false</span>
-</pre></div>
-
-
-<hr />
-<h2>참고</h2>
-<ol>
-<li><a href="https://kldp.org/node/132431">KLDP 글</a></li>
-</ol>
   </div>
 </article>
 
