@@ -92,20 +92,15 @@
 &lt;hr /&gt;
 &lt;h2&gt;설치법&lt;/h2&gt;
 &lt;h3&gt;윈도우&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;작성중&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://www.python.org/downloads/"&gt;파이썬 재단 홈페이지&lt;/a&gt; 참고.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3&gt;맥&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;작성중&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;맥에는 기본적으로 2.7.10이 내장되어 있다. 가급적 3.x 이상의 버전을 사용하라고 권고하고 있으니 따로 설치만 해주면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.python.org/downloads/"&gt;파이썬 재단 홈페이지&lt;/a&gt; 참고.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3&gt;리눅스&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;작성중&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt; 등 별도의 패키지 관리도구를 이용해서 설치하면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.python.org/downloads/"&gt;파이썬 재단 홈페이지&lt;/a&gt; 참고.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;변수명&lt;/h2&gt;
 &lt;p&gt;변수명은 문자, 숫자, 언더바(_)를 포함 가능하지만 숫자가 먼저 올 수 없다.&lt;/p&gt;
@@ -446,7 +441,14 @@ False
 &lt;h3&gt;깊은복사&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;deepcopy()&lt;/code&gt; 함수를 사용하면 객체를 공유하지 않는 깊은 복사(deep copy)가 됨. 일반적으로 생각하는 '복사'의 개념과 같음.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2&gt;함수&lt;/h2&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category></entry><entry><title>About</title><link href="http://til.chann.kr/about/about" rel="alternate"></link><updated>2015-12-25T00:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2015-12-25:about/about</id><summary type="html">&lt;!--Summary: --&gt;
+&lt;h2&gt;함수&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;Test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;파이썬에서는 함수도 객체다. &lt;code&gt;def&lt;/code&gt; 는 함수를 만드는 구문이다. Test 라는 이름은 생성된 함수 객체를 참조하는 레퍼런스다. 메모리 어딘가에 함수 객체가 생성되는 것이고, 객체이기 때문에 생성할 때마다 다른 주소값을 가진다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;return&lt;/code&gt;에서는 함수를 종료하고, 해당 함수를 호출한 곳으로 다시 되돌아간다. 객체를 되돌려준다. &lt;code&gt;return&lt;/code&gt;을 적지 않아도, &lt;code&gt;return&lt;/code&gt;만 적어도 종료되며, 이때 반환값은 None이다.&lt;/p&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category></entry><entry><title>About</title><link href="http://til.chann.kr/about/about" rel="alternate"></link><updated>2015-12-25T00:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2015-12-25:about/about</id><summary type="html">&lt;!--Summary: --&gt;
 
 &lt;p&gt;Today I Learned에 대한 내용을 다룹니다.&lt;/p&gt;
 &lt;p&gt;Python Pelican 3.6.4을 사용하여 Github Pages에 올려서 운영하고 있습니다.&lt;/p&gt;

@@ -89,20 +89,15 @@
 <hr />
 <h2>설치법</h2>
 <h3>윈도우</h3>
-<blockquote>
-<p>작성중</p>
-</blockquote>
+<p><a href="https://www.python.org/downloads/">파이썬 재단 홈페이지</a> 참고.</p>
 <hr />
 <h3>맥</h3>
-<blockquote>
-<p>작성중</p>
-</blockquote>
 <p>맥에는 기본적으로 2.7.10이 내장되어 있다. 가급적 3.x 이상의 버전을 사용하라고 권고하고 있으니 따로 설치만 해주면 된다.</p>
+<p><a href="https://www.python.org/downloads/">파이썬 재단 홈페이지</a> 참고.</p>
 <hr />
 <h3>리눅스</h3>
-<blockquote>
-<p>작성중</p>
-</blockquote>
+<p><code>apt-get</code>, <code>yum</code> 등 별도의 패키지 관리도구를 이용해서 설치하면 된다.</p>
+<p><a href="https://www.python.org/downloads/">파이썬 재단 홈페이지</a> 참고.</p>
 <hr />
 <h2>변수명</h2>
 <p>변수명은 문자, 숫자, 언더바(_)를 포함 가능하지만 숫자가 먼저 올 수 없다.</p>
@@ -444,6 +439,13 @@ False
 <p><code>deepcopy()</code> 함수를 사용하면 객체를 공유하지 않는 깊은 복사(deep copy)가 됨. 일반적으로 생각하는 '복사'의 개념과 같음.</p>
 <hr />
 <h2>함수</h2>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">Test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+
+
+<p>파이썬에서는 함수도 객체다. <code>def</code> 는 함수를 만드는 구문이다. Test 라는 이름은 생성된 함수 객체를 참조하는 레퍼런스다. 메모리 어딘가에 함수 객체가 생성되는 것이고, 객체이기 때문에 생성할 때마다 다른 주소값을 가진다.</p>
+<p><code>return</code>에서는 함수를 종료하고, 해당 함수를 호출한 곳으로 다시 되돌아간다. 객체를 되돌려준다. <code>return</code>을 적지 않아도, <code>return</code>만 적어도 종료되며, 이때 반환값은 None이다.</p>
   </div>
   <div class="article_meta">
     <p>Posted on: Mon 04 January 2016</p>
