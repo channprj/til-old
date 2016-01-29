@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>Archives - Today I Learned</title>
+	<title>runlevel - Today I Learned</title>
 	<!-- Using the latest rendering mode for IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -10,7 +10,8 @@
 
 
 
-		<meta name="author" content="CHANN" />
+    <meta name="author" content="CHANN" />
+    <meta name="keywords" content="runlevel" />
 
 	<!-- CSS Components -->
 	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -55,43 +56,26 @@ Today I Learned			</a>
 <!-- breadcrumbs -->
 <div class="breadcrumbs">
     <ol class="breadcrumb">
-        <li><a href="http://til.chann.kr" title="Today I Learned"><i class="fa fa-home fa-lg"></i></a></li>
-        <li class="active">Archives</li>
+        <li><a href="http://til.chann.kr" title="Today I Learned"><i class="xi-home"></i></a></li>
+        <li><a href="http://til.chann.kr/tags" title="Tags">Tags</a></li>
+        <li class="active">runlevel</li>
     </ol>
 </div>
 <!-- banner -->
 <div class="container">
 	<div class="wrap row">
 		<div class="col-lg-12">
-    <section id="content">
-        <h1>Archives for Today I Learned</h1>
-        <div id="archives">
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-30T06:22:00+09:00">Sat 30 January 2016</time></span>
-                    <a href="http://til.chann.kr/linux/runlevel-summary">리눅스 runlevel 정리</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-25T21:12:00+09:00">Mon 25 January 2016</time></span>
-                    <a href="http://til.chann.kr/python/ohmyzsh-autocomplete-bug-fix">zsh에서 vim 명령어 자동완성 오류</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-20T16:32:00+09:00">Wed 20 January 2016</time></span>
-                    <a href="http://til.chann.kr/study/programming-study-site-list">프로그래밍 공부 사이트 정리</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-20T14:28:00+09:00">Wed 20 January 2016</time></span>
-                    <a href="http://til.chann.kr/vcs/git-ko-path-name-fix">Git 한글 깨짐문제</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-15T20:12:00+09:00">Fri 15 January 2016</time></span>
-                    <a href="http://til.chann.kr/bower/how-to-use-bower">Bower 사용법</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-04T20:12:00+09:00">Mon 04 January 2016</time></span>
-                    <a href="http://til.chann.kr/python/python-variable-operator">파이썬 기초</a>
-                </p>
-        </div>
-    </section>
+            <article>
+                <h2><a href="http://til.chann.kr/linux/runlevel-summary">리눅스 runlevel 정리</a></h2>
+                <div class="summary"><!--Summary: -->
+
+<h2>runlevel 이란</h2>
+<p><code>runlevel</code> 이란, 리눅스 시스템 관리의 용이함을 위하여 서비스의 실행을 단계별로 구분하여 적용하는 것을 말함. 보통 0 ~ 6 까지 총 7가지 모드가 있음. 리눅스마다 조금씩 다르지만 0(정지), 1(싱글모드), 6(재시작)은 일치함. 낮은 레벨일수록, 시스템 시작시 불러오는 드라이버나 데몬 수가 적음. <code>runlevel</code> 은 높아지는 방향으로 진행되며, 부팅되면 ...</p></!--summary:>
+                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/linux/runlevel-summary">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
 		</div>
 	</div>
 </div>
