@@ -464,8 +464,4 @@ False
 
 
 &lt;p&gt;파이썬에서는 함수도 객체다. &lt;code&gt;def&lt;/code&gt; 는 함수를 만드는 구문이다. Test 라는 이름은 생성된 함수 객체를 참조하는 레퍼런스다. 메모리 어딘가에 함수 객체가 생성되는 것이고, 객체이기 때문에 생성할 때마다 다른 주소값을 가진다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;return&lt;/code&gt;에서는 함수를 종료하고, 해당 함수를 호출한 곳으로 다시 되돌아간다. 객체를 되돌려준다. &lt;code&gt;return&lt;/code&gt;을 적지 않아도, &lt;code&gt;return&lt;/code&gt;만 적어도 종료되며, 이때 반환값은 None이다.&lt;/p&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category></entry><entry><title>About</title><link href="http://til.chann.kr/about/about" rel="alternate"></link><updated>2015-12-25T00:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2015-12-25:about/about</id><summary type="html">&lt;!--Summary: --&gt;
-
-&lt;p&gt;Today I Learned에 대한 내용을 다룹니다.&lt;/p&gt;
-&lt;p&gt;Python Pelican 3.6.4을 사용하여 Github Pages에 올려서 운영하고 있습니다.&lt;/p&gt;
-&lt;p&gt;Travis-ci와 연동하여 &lt;a href="https://github.com/channprj/git.chann.kr-source"&gt;Github 저장소&lt;/a&gt;에 푸시가 되면 &lt;a href="https://github.com/channprj/git.chann.kr"&gt;Github  Pages&lt;/a&gt;에 자동으로 빌드하고 푸시합니다.&lt;/p&gt;</summary><category term="about"></category><category term="pelican"></category><category term="github"></category><category term="github pages"></category><category term="introduction"></category></entry></feed>
+&lt;p&gt;&lt;code&gt;return&lt;/code&gt;에서는 함수를 종료하고, 해당 함수를 호출한 곳으로 다시 되돌아간다. 객체를 되돌려준다. &lt;code&gt;return&lt;/code&gt;을 적지 않아도, &lt;code&gt;return&lt;/code&gt;만 적어도 종료되며, 이때 반환값은 None이다.&lt;/p&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category></entry></feed>
