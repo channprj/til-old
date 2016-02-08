@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>python - Today I Learned</title>
+	<title>Shell - Today I Learned</title>
 	<!-- Using the latest rendering mode for IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="CHANN" />
-    <meta name="keywords" content="python" />
+    <meta name="keywords" content="Shell" />
 
 	<!-- CSS Components -->
 	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -27,6 +27,7 @@
 
 
 
+	<link href="http://til.chann.kr/feeds/shell.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned Shell ATOM Feed"/>
 </head>
 <body>
 <!-- GNB -->
@@ -57,8 +58,8 @@ Today I Learned			</a>
 <div class="breadcrumbs">
     <ol class="breadcrumb">
         <li><a href="http://til.chann.kr" title="Today I Learned"><i class="xi-home"></i></a></li>
-        <li><a href="http://til.chann.kr/tags" title="Tags">Tags</a></li>
-        <li class="active">python</li>
+        <li><a href="http://til.chann.kr/categories" title="Today I Learned Categories">Categories</a></li>
+        <li class="active">Shell</li>
     </ol>
 </div>
 <!-- banner -->
@@ -66,45 +67,11 @@ Today I Learned			</a>
 	<div class="wrap row">
 		<div class="col-lg-12">
             <article>
-                <h2><a href="http://til.chann.kr/python/python-function">파이썬 함수</a></h2>
-                <div class="summary"><!--Summary: -->
-                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/python/python-function">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://til.chann.kr/python/python-variable-operator">파이썬 기초</a></h2>
+                <h2><a href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">zsh에서 vim 명령어 자동완성 오류</a></h2>
                 <div class="summary"><!--Summary: -->
 
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<h2>특징</h2>
-<ul>
-<li>인터프리터 언어</li>
-<li>가독성이 좋음</li>
-<li>접착성이 좋음(풀 언어(glue language)라고도 부름)</li>
-<li>무료</li>
-<li>방대한 오픈소스</li>
-<li>유니코드 기반</li>
-<li>동적 타이핑</li>
-</ul>
-<hr />
-<h2>2.x와 3.x의 차이</h2>
-<blockquote>
-<p>작성중</p>
-</blockquote>
-<ul>
-<li>print 함수 형태 변경</li>
-<li>int 형으로 통일됨</li>
-<li>하지만 나누기 결과는 float</li>
-<li>3.x는 문자열 기본 인코딩이 유니코드</li>
-</ul>
-<hr />
-<h2>설치법</h2>
-<h3>윈도우</h3>
-<p><a href="https://www.python.org/downloads/">파이썬 재단 홈페이지</a> 참고 ...</p></!--summary:>
-                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/python/python-variable-operator">more ...</a>
+<p>갑자기 <code>vim</code> 을 입력하고 tab을 누르니 <code>_arguments:450: _vim_files: function definition file not found</code> 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 <code>.zcompdump*</code> 파일을 지우면 대체로 잔버그가 해결된다는 답변<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 <code>exec zsh</code> 해야 해결되었다. 아무 생각 없이 <code>source .zshrc ...</code></p></!--summary:>
+                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">more ...</a>
                 </div>
             </article>
             <hr/>
