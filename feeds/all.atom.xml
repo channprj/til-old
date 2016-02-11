@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/all.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-02-08T13:00:00+09:00</updated><entry><title>파이썬 함수</title><link href="http://til.chann.kr/python/python-function" rel="alternate"></link><updated>2016-02-08T13:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-08:python/python-function</id><summary type="html">&lt;!--Summary: --&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category><category term="function"></category><category term="파이썬"></category><category term="프로그래밍"></category><category term="개발"></category><category term="스크립트"></category><category term="함수"></category><category term="공부"></category><category term="스터디"></category><category term="study"></category></entry><entry><title>리눅스 runlevel 정리</title><link href="http://til.chann.kr/linux/runlevel-summary" rel="alternate"></link><updated>2016-01-30T06:22:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-30:linux/runlevel-summary</id><summary type="html">&lt;!--Summary: --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/all.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-02-11T22:32:00+09:00</updated><entry><title>S65-01 JS, Canvas, SVG</title><link href="http://til.chann.kr/study/s65-js-study" rel="alternate"></link><updated>2016-02-11T22:32:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-11:study/s65-js-study</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;!-- 첫 번째 출석 8865 --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;트렌디한 프레임워크나 라이브러리, 최신기술보다는 원론적인 내용을 다룰것&lt;/li&gt;
+&lt;li&gt;개발자로서 오래 살아남기 위해서는 기초 및 핵심기술이 중요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Graphic System&lt;/h2&gt;
+&lt;p&gt;디지털 환경에서는 픽셀(점)으로 그래픽을 표현함. 모든 컴퓨터 그래픽 시스템의 기초는 비트맵 시스템임.&lt;/p&gt;
+&lt;p&gt;점을 하나하나 찍기보다는 계산에 의해 색을 채울 방법을 고민하기 시작함.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layer 0 - Fixed Number : 확정되고 고정된 수치
+--&amp;gt; Fixed Number로 반응형 환경에 대응하기 힘들었음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Layer 0과 1 사이의 애매함 : Drawing API, Shader, Filter, FontRenderer)
+--&amp;gt; 보통 Layer 0을 감싸고 있는 기저레이어에서 제공&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layer 1 - Caculator Hint : 상대적인 수치
+ScreenSize, ChromeSize, Foreground, Layout System, LazyDetect, Reflow, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Canvas API --&amp;gt; Apple의 Dashboard API 기반.
+Dashboard, Android Widget 등에서 쓰이는 Canvas API도 위와 거의 동일.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layer 2 - Components
+추상화로 미리 구현된 요소(element)들. (div, input, textarea, img, a, ...)
+요소 &amp;lt; 노드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;Hello World!&lt;/div&gt;
+
+&lt;p&gt;--&amp;gt; Static Rendering&lt;/p&gt;
+&lt;p&gt;Model(Data) - View(Layout)
+기억하고 보여주고 싶은 데이터만을 추린 것이 모델.
+Runtime Rendering&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layer 3 - Frameworks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;SVG (Scalable Vector Graphics)&lt;/h2&gt;
+&lt;p&gt;2D 그래픽을 표현하기 위해 XML로 정의된 마크업 언어.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vector Shape&lt;/li&gt;
+&lt;li&gt;Images&lt;/li&gt;
+&lt;li&gt;Text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Group, Style, Transform 가능.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Embedding&lt;/li&gt;
+&lt;li&gt;Scripting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SVG의 선, 도형 하나한가 DOM 엘리먼트로 동작하여 이벤트를 걸 수 있음.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;SVG(VML) vs Canvas&lt;/h3&gt;
+&lt;p&gt;DOM은 구조적으로 복잡하여 로딩 속도가 느려질 수 밖에 없음.
+Canvas는 단일 엘리먼트라 상대적으로 속도가 빠를 수 밖에 없음.&lt;/p&gt;
+&lt;h3&gt;Tools, Library for SVG&lt;/h3&gt;
+&lt;h4&gt;Tools&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Adobe Illustrator&lt;/li&gt;
+&lt;li&gt;CorelDRAW&lt;/li&gt;
+&lt;li&gt;Libre Office Draw, Open Office Draw (무료)&lt;/li&gt;
+&lt;li&gt;Inkscape (무료)&lt;/li&gt;
+&lt;li&gt;etc...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Libraries&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;D3.js&lt;/li&gt;
+&lt;li&gt;raphaelJS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;SVG as a markup&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;img src="#" /&amp;gt;&lt;/code&gt; ...&lt;/p&gt;</summary><category term="study"></category><category term="programming"></category><category term="dev"></category><category term="js"></category><category term="javascript"></category><category term="canvas"></category><category term="svg"></category><category term="자바스크립트"></category><category term="ECMAScript"></category><category term="ES6"></category></entry><entry><title>파이썬 함수</title><link href="http://til.chann.kr/python/python-function" rel="alternate"></link><updated>2016-02-08T13:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-08:python/python-function</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;작성중&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;참고&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://codecademy.com"&gt;Codecademy&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category><category term="function"></category><category term="파이썬"></category><category term="프로그래밍"></category><category term="개발"></category><category term="스크립트"></category><category term="함수"></category><category term="공부"></category><category term="스터디"></category><category term="study"></category></entry><entry><title>자주 사용하는 vim 명령어 정리</title><link href="http://til.chann.kr/editor/vim-frequent-command" rel="alternate"></link><updated>2016-02-08T13:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-08:editor/vim-frequent-command</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;작성중&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;참고&lt;/h2&gt;
+&lt;p&gt;1.&lt;a href="http://www.joinc.co.kr/modules/moniwiki/wiki.php/Site/Vim/Documents/UsedVim"&gt;Joinc Wiki&lt;/a&gt;
+2. &lt;a href="https://blog.outsider.ne.kr/540"&gt;Outsider님 블로그&lt;/a&gt;
+3. &lt;a href="http://hyeonstorage.tistory.com/274"&gt;하이언IT님 블로그&lt;/a&gt;&lt;/p&gt;</summary><category term="vim"></category><category term="editor"></category><category term="cli"></category><category term="빔"></category><category term="에디터"></category></entry><entry><title>리눅스 runlevel 정리</title><link href="http://til.chann.kr/linux/runlevel-summary" rel="alternate"></link><updated>2016-01-30T06:22:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-30:linux/runlevel-summary</id><summary type="html">&lt;!--Summary: --&gt;
 
 &lt;h2&gt;runlevel 이란&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;runlevel&lt;/code&gt; 이란, 리눅스 시스템 관리의 용이함을 위하여 서비스의 실행을 단계별로 구분하여 적용하는 것을 말함. 보통 0 ~ 6 까지 총 7가지 모드가 있음. 리눅스마다 조금씩 다르지만 0(정지), 1(싱글모드), 6(재시작)은 일치함. 낮은 레벨일수록, 시스템 시작시 불러오는 드라이버나 데몬 수가 적음. &lt;code&gt;runlevel&lt;/code&gt; 은 높아지는 방향으로 진행되며, 부팅되면 0부터 시작함. &lt;code&gt;reboot&lt;/code&gt; 명령어를 실행하면 &lt;code&gt;runlevel&lt;/code&gt; 이 6이 됨.&lt;/p&gt;
