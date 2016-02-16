@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/shell.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-01-25T21:12:00+09:00</updated><entry><title>zsh에서 vim 명령어 자동완성 오류</title><link href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix" rel="alternate"></link><updated>2016-01-25T21:12:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-25:shell/ohmyzsh-autocomplete-bug-fix</id><summary type="html">&lt;!--Summary: --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="http://til.chann.kr/" rel="alternate"></link><link href="http://til.chann.kr/feeds/shell.atom.xml" rel="self"></link><id>http://til.chann.kr/</id><updated>2016-02-16T22:00:00+09:00</updated><entry><title>서버 재부팅 시 서비스 자동 실행 쉘스크립트</title><link href="http://til.chann.kr/shell/upstart-service-shell-script" rel="alternate"></link><updated>2016-02-16T22:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-16:shell/upstart-service-shell-script</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Ubuntu Linux 기준으로 작성함.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;init 파일 생성&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/etc/init.d&lt;/code&gt; 에 example 생성 후 아래와 같이 설정하자.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;chmod &lt;span class="m"&gt;755&lt;/span&gt; example
+&lt;span class="nv"&gt;$ &lt;/span&gt;chown root:root example
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;쉘 스크립트&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;example&lt;/code&gt; 의 코드는 아래와 같이 작성 가능하다.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/sh&lt;/span&gt;
+
+&lt;span class="c"&gt;### BEGIN INIT INFO&lt;/span&gt;
+&lt;span class="c"&gt;# Provides: blog&lt;/span&gt;
+&lt;span class="c"&gt;# Required-Start:&lt;/span&gt;
+&lt;span class="c"&gt;# Required-Stop:&lt;/span&gt;
+&lt;span class="c"&gt;# Default-Start: 2 3 4 5&lt;/span&gt;
+&lt;span class="c"&gt;# Default-Stop: 0 1 6&lt;/span&gt;
+&lt;span class="c"&gt;### END INIT INFO&lt;/span&gt;
+
+&lt;span class="nv"&gt;USER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;service&amp;quot;&lt;/span&gt;    
+
+stop&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;  &lt;span class="c"&gt;# -c 옵션은 해당 USER로 실행함을 의미.&lt;/span&gt;
+    sudo su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c &lt;span class="s2"&gt;&amp;quot;# something to stop&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+start&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;  
+    sudo su - &lt;span class="nv"&gt;$USER&lt;/span&gt; -c &lt;span class="s2"&gt;&amp;quot;# something to start&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; in  
+    start&lt;span class="o"&gt;)&lt;/span&gt;
+        start
+        &lt;span class="p"&gt;;;&lt;/span&gt;
+    stop&lt;span class="o"&gt;)&lt;/span&gt;
+        stop
+        &lt;span class="p"&gt;;;&lt;/span&gt;
+    restart&lt;span class="o"&gt;)&lt;/span&gt; 
+        stop
+        start
+        &lt;span class="p"&gt;;;&lt;/span&gt;
+    &lt;span class="c"&gt;# 필요할 경우 reload 등의 옵션을 추가적으로 구현.&lt;/span&gt;
+    *&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Usage: &lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt; {start|stop|restart}&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;esac&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;위의 주석처리 된 부분에서 &lt;code&gt;runlevel&lt;/code&gt;을 2, 3, 4, 5라고 명시한 것(Default-Start)은 싱글유저 모드 이외엔 자동 시작하겠다는 의미이다. 위의 스크립트는 굉장히 간단하니 기타 응용 방법은 &lt;code&gt;/etc/init.d/&lt;/code&gt; 의 다른 스크립트들을 보고 참고하자.&lt;/p&gt;
+&lt;h2&gt;심볼릭 링크 추가&lt;/h2&gt;
+&lt;p&gt;쉘스크립트 작성이 끝났으면 아래와 같이 심볼릭 링크를 추가해주자. rc는 다목적 시동 스크립트를 의미한다. upstart init은 우분투 6.10 때부터 도입되었다.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;update-rc.d ghost defaults
+&lt;span class="nv"&gt;$ &lt;/span&gt;update-rc.d ghost &lt;span class="nb"&gt;enable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;</summary><category term="shell"></category><category term="terminal"></category><category term="cli"></category><category term="sh"></category><category term="init"></category><category term="init.d"></category><category term="ubuntu"></category><category term="upstart"></category></entry><entry><title>zsh에서 vim 명령어 자동완성 오류</title><link href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix" rel="alternate"></link><updated>2016-01-25T21:12:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-01-25:shell/ohmyzsh-autocomplete-bug-fix</id><summary type="html">&lt;!--Summary: --&gt;
 
 &lt;p&gt;갑자기 &lt;code&gt;vim&lt;/code&gt; 을 입력하고 tab을 누르니 &lt;code&gt;_arguments:450: _vim_files: function definition file not found&lt;/code&gt; 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 &lt;code&gt;.zcompdump*&lt;/code&gt; 파일을 지우면 대체로 잔버그가 해결된다는 답변&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 &lt;code&gt;exec zsh&lt;/code&gt; 해야 해결되었다. 아무 생각 없이 &lt;code&gt;source .zshrc&lt;/code&gt; 를 치고 '어... 왜 안 고쳐지지?' 헤맸던 내가 바보같다... dotfile 은 환경설정이거늘 ㅠㅠ&lt;/p&gt;
 &lt;h2&gt;정리&lt;/h2&gt;

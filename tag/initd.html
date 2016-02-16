@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>terminal - Today I Learned</title>
+	<title>init.d - Today I Learned</title>
 	<!-- Using the latest rendering mode for IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="CHANN" />
-    <meta name="keywords" content="terminal" />
+    <meta name="keywords" content="init.d" />
 
 	<!-- CSS Components -->
 	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -58,7 +58,7 @@ Today I Learned			</a>
     <ol class="breadcrumb">
         <li><a href="http://til.chann.kr" title="Today I Learned"><i class="xi-home"></i></a></li>
         <li><a href="http://til.chann.kr/tags" title="Tags">Tags</a></li>
-        <li class="active">terminal</li>
+        <li class="active">init.d</li>
     </ol>
 </div>
 <!-- banner -->
@@ -90,33 +90,6 @@ Today I Learned			</a>
 <span class="c"># Default-Start: 2 3 4 5</span>
 <span class="c"># Default-Stop: 0 1 ...</span></pre></div></!--summary:>
                     <a class="btn btn-default btn-xs" href="http://til.chann.kr/shell/upstart-service-shell-script">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">zsh에서 vim 명령어 자동완성 오류</a></h2>
-                <div class="summary"><!--Summary: -->
-
-<p>갑자기 <code>vim</code> 을 입력하고 tab을 누르니 <code>_arguments:450: _vim_files: function definition file not found</code> 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 <code>.zcompdump*</code> 파일을 지우면 대체로 잔버그가 해결된다는 답변<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다.  알고 보니 <code>exec zsh</code> 해야 해결되었다. 아무 생각 없이 <code>source .zshrc ...</code></p></!--summary:>
-                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://til.chann.kr/vcs/git-ko-path-name-fix">Git 한글 깨짐문제</a></h2>
-                <div class="summary"><!--Summary: -->
-
-<p>인코딩 문제. 아래 한 줄이면 된다.</p>
-<div class="highlight"><pre><span class="nv">$ </span>git config core.quotepath <span class="nb">false</span>
-</pre></div>
-
-
-<hr />
-<h2>참고</h2>
-<ol>
-<li><a href="https://kldp.org/node/132431">KLDP 글</a></li>
-</ol>
-                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/vcs/git-ko-path-name-fix">more ...</a>
                 </div>
             </article>
             <hr/>

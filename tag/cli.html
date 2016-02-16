@@ -66,6 +66,34 @@ Today I Learned			</a>
 	<div class="wrap row">
 		<div class="col-lg-12">
             <article>
+                <h2><a href="http://til.chann.kr/shell/upstart-service-shell-script">서버 재부팅 시 서비스 자동 실행 쉘스크립트</a></h2>
+                <div class="summary"><!--Summary: -->
+
+<blockquote>
+<p>Ubuntu Linux 기준으로 작성함.</p>
+</blockquote>
+<h2>init 파일 생성</h2>
+<p><code>/etc/init.d</code> 에 example 생성 후 아래와 같이 설정하자.</p>
+<div class="highlight"><pre><span class="nv">$ </span>chmod <span class="m">755</span> example
+<span class="nv">$ </span>chown root:root example
+</pre></div>
+
+
+<h2>쉘 스크립트</h2>
+<p><code>example</code> 의 코드는 아래와 같이 작성 가능하다.</p>
+<div class="highlight"><pre><span class="c">#!/bin/sh</span>
+
+<span class="c">### BEGIN INIT INFO</span>
+<span class="c"># Provides: blog</span>
+<span class="c"># Required-Start:</span>
+<span class="c"># Required-Stop:</span>
+<span class="c"># Default-Start: 2 3 4 5</span>
+<span class="c"># Default-Stop: 0 1 ...</span></pre></div></!--summary:>
+                    <a class="btn btn-default btn-xs" href="http://til.chann.kr/shell/upstart-service-shell-script">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="http://til.chann.kr/editor/vim-frequent-command">자주 사용하는 vim 명령어 정리</a></h2>
                 <div class="summary"><!--Summary: -->
 
