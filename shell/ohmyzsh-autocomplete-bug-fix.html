@@ -9,34 +9,34 @@
 	
 
 
-<link rel="canonical" href="https://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">
+<link rel="canonical" href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix">
 
         <meta name="author" content="CHANN" />
         <meta name="keywords" content="zsh,shell,terminal,cli,sh,ohmyzsh,bug,fix" />
         <meta name="description" content="갑자기 vim 을 입력하고 tab을 누르니 _arguments:450: _vim_files: function definition file not found 라는 오류메시지가 떴다. 구글링을 해 보니 홈 폴더에서 .zcompdump* 파일을 지우면 대체로 잔버그가 해결된다는 답변1에 꽤나 힘이 실려있었는데, 이번 경우에는 좀처럼 통하지 않았다. 알고 보니 exec zsh 해야 해결되었다. 아무 생각 없이 source .zshrc ..." />
 
 	<!-- CSS Components -->
-	<link rel="stylesheet" type="text/css" href="https://til.chann.kr/theme/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="https://til.chann.kr/theme/bower_components/xeicon/xeicon.min.css">
-	<link rel="stylesheet" type="text/css" href="https://til.chann.kr/theme/css/pygment.css"/>
+	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/bower_components/xeicon/xeicon.min.css">
+	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/css/pygment.css"/>
 	<!-- <link rel="stylesheet" type="text/css" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"> -->
 	<link rel="stylesheet" type="text/css" href="https://blog.chann.kr/assets/css/bigfoot-number.css">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="https://til.chann.kr/theme/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="http://til.chann.kr/theme/css/base.css"/>
 
-	<link href="https://til.chann.kr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned ATOM Feed"/>
+	<link href="http://til.chann.kr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned ATOM Feed"/>
 
 
 
-	<link href="https://til.chann.kr/feeds/shell.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned Shell ATOM Feed"/>
+	<link href="http://til.chann.kr/feeds/shell.atom.xml" type="application/atom+xml" rel="alternate" title="Today I Learned Shell ATOM Feed"/>
 </head>
 <body>
 <!-- GNB -->
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="gnb container">
 		<div class="navbar-header">
-			<a href="https://til.chann.kr/" class="navbar-brand">
+			<a href="http://til.chann.kr/" class="navbar-brand">
 Today I Learned			</a>
 		</div>
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -46,11 +46,11 @@ Today I Learned			</a>
 				<li><a href="https://blog.chann.kr"><i class="gnb-xeicon xi-ghost"></i></a></li>
 				<li><a href="https://twitter.com/channprj"><i class="gnb-xeicon xi-twitter"></i></a></li>
 				<li><a href="https://github.com/channprj"><i class="gnb-xeicon xi-github"></i></a></li>
-				<li><a href="https://til.chann.kr/about"><i class="gnb-xeicon xi-unknown-circle"></i></a></li>
-				<li><a href="https://til.chann.kr/archives"><i class="gnb-xeicon xi-archive"></i><!-- <span class="icon-label"></span> --></a></li>
-				<li><a href="https://til.chann.kr/categories"><i class="gnb-xeicon xi-sitemap"></i></a></li>
-				<li><a href="https://til.chann.kr/tags"><i class="gnb-xeicon xi-tags"></i></a></li>
-				<li><a href="https://til.chann.kr/search"><i class="gnb-xeicon xi-magnifier"></i></a></li>
+				<li><a href="http://til.chann.kr/about"><i class="gnb-xeicon xi-unknown-circle"></i></a></li>
+				<li><a href="http://til.chann.kr/archives"><i class="gnb-xeicon xi-archive"></i><!-- <span class="icon-label"></span> --></a></li>
+				<li><a href="http://til.chann.kr/categories"><i class="gnb-xeicon xi-sitemap"></i></a></li>
+				<li><a href="http://til.chann.kr/tags"><i class="gnb-xeicon xi-tags"></i></a></li>
+				<li><a href="http://til.chann.kr/search"><i class="gnb-xeicon xi-magnifier"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,8 +59,8 @@ Today I Learned			</a>
 <!-- breadcrumbs -->
 <div class="breadcrumbs">
             <ol class="breadcrumb">
-                <li><a href="https://til.chann.kr" title="Today I Learned"><i class="xi-home"></i></a></li>
-                <li><a href="https://til.chann.kr/shell/index" title="Shell">Shell</a></li>
+                <li><a href="http://til.chann.kr" title="Today I Learned"><i class="xi-home"></i></a></li>
+                <li><a href="http://til.chann.kr/shell/index" title="Shell">Shell</a></li>
                 <li class="active">zsh에서 vim 명령어 자동완성 오류</li>
             </ol>
 </div>
@@ -72,7 +72,7 @@ Today I Learned			</a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix"
+                    <a href="http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix"
                        rel="bookmark"
                        title="Permalink to zsh에서 vim 명령어 자동완성 오류">
                         zsh에서 vim 명령어 자동완성 오류
@@ -93,21 +93,21 @@ Today I Learned			</a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://til.chann.kr/tag/zsh">zsh</a>
+	<a href="http://til.chann.kr/tag/zsh">zsh</a>
         /
-	<a href="https://til.chann.kr/tag/shell">shell</a>
+	<a href="http://til.chann.kr/tag/shell">shell</a>
         /
-	<a href="https://til.chann.kr/tag/terminal">terminal</a>
+	<a href="http://til.chann.kr/tag/terminal">terminal</a>
         /
-	<a href="https://til.chann.kr/tag/cli">cli</a>
+	<a href="http://til.chann.kr/tag/cli">cli</a>
         /
-	<a href="https://til.chann.kr/tag/sh">sh</a>
+	<a href="http://til.chann.kr/tag/sh">sh</a>
         /
-	<a href="https://til.chann.kr/tag/ohmyzsh">ohmyzsh</a>
+	<a href="http://til.chann.kr/tag/ohmyzsh">ohmyzsh</a>
         /
-	<a href="https://til.chann.kr/tag/bug">bug</a>
+	<a href="http://til.chann.kr/tag/bug">bug</a>
         /
-	<a href="https://til.chann.kr/tag/fix">fix</a>
+	<a href="http://til.chann.kr/tag/fix">fix</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -140,7 +140,7 @@ Today I Learned			</a>
             var disqus_shortname = 'githubs'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'ohmyzsh-autocomplete-bug-fix';
-                var disqus_url = 'https://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix';
+                var disqus_url = 'http://til.chann.kr/shell/ohmyzsh-autocomplete-bug-fix';
 
             var disqus_config = function () {
                 this.language = "ko";
@@ -180,11 +180,11 @@ Today I Learned			</a>
    </div>
 </footer>
 <!-- JS Components -->
-<script type="text/javascript" src="https://til.chann.kr/theme/bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="https://til.chann.kr/theme/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://til.chann.kr/theme/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="http://til.chann.kr/theme/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://blog.chann.kr/assets/js/bigfoot.min.js"></script>
 <script type="text/javascript">$.bigfoot();</script>
-<!-- <script src="https://til.chann.kr/theme/js/prism.js"></script> -->
+<!-- <script src="http://til.chann.kr/theme/js/prism.js"></script> -->
 
     <!-- Disqus -->
     <script type="text/javascript">
