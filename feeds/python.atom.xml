@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="https://til.chann.kr/" rel="alternate"></link><link href="https://til.chann.kr/feeds/python.atom.xml" rel="self"></link><id>https://til.chann.kr/</id><updated>2016-02-08T13:00:00+09:00</updated><entry><title>파이썬 함수</title><link href="https://til.chann.kr/python/python-function" rel="alternate"></link><updated>2016-02-08T13:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-08:python/python-function</id><summary type="html">&lt;!--Summary: --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Today I Learned</title><link href="https://til.chann.kr/" rel="alternate"></link><link href="https://til.chann.kr/feeds/python.atom.xml" rel="self"></link><id>https://til.chann.kr/</id><updated>2016-02-27T18:00:00+09:00</updated><entry><title>파이썬 기본 함수들</title><link href="https://til.chann.kr/python/python-base-function" rel="alternate"></link><updated>2016-02-27T18:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-27:python/python-base-function</id><summary type="html">&lt;!--Summary: --&gt;
+
+&lt;h2&gt;입출력&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;작성중&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;참고&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://codecademy.com"&gt;Codecademy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wikidocs.net"&gt;Wikidocs&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="python"></category><category term="programming"></category><category term="dev"></category><category term="scrpit"></category><category term="function"></category><category term="파이썬"></category><category term="프로그래밍"></category><category term="개발"></category><category term="스크립트"></category><category term="함수"></category><category term="공부"></category><category term="스터디"></category><category term="study"></category></entry><entry><title>파이썬 함수</title><link href="https://til.chann.kr/python/python-function" rel="alternate"></link><updated>2016-02-08T13:00:00+09:00</updated><author><name>CHANN</name></author><id>tag:til.chann.kr,2016-02-08:python/python-function</id><summary type="html">&lt;!--Summary: --&gt;
 
 &lt;h2&gt;파이썬 함수 개념&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;Test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
